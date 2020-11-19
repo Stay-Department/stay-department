@@ -87,6 +87,7 @@ button:active {
 
 .standard-button--disabled{
    pointer-events: none;
+   opacity: .5;
     /* this can just change the opacity (?) */
 }
 
