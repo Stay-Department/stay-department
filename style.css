@@ -7,8 +7,38 @@ Author URI: https://tomusborne.com & https://staydepartment.com
 Description: generatepress child theme for Stay Department
 Version: 1.1
 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
 * {
+  font-family: 'Open Sans';
   font-size: 16px;
+  background-color: #fff;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+
+}
+
+button:focus {
+
+}
+
+button:active {
+    transform: scale(0.99);
 }
 
 .main-navigation .main-nav ul li[class*="current-menu-"] > a{
@@ -42,32 +72,72 @@ Version: 1.1
 }
 
 /* ---- STANDARD BUTTONS ---- */
-
 .standard-button{
+  width: 200px;
+  height: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  text-align: center;
+  border-radius: 15%/50%;
+  transition-duration: .4s;
+  transition: background-color .4s, border-color .4s, color .4s;
 }
 
 .standard-button--disabled{
+   pointer-events: none;
     /* this can just change the opacity (?) */
 }
 
 .standard-button_primary{
   background-color: #303030;
-  border-radius: 15%/50%;
   color:#fff;
-  width: 200px;
-  height: 56px;
 }
+
+.standard-button_primary:hover {
+  background-color: #E24242;
+  transition: background-color;
+}
+
 .standard-button_primary--small{
+  width: 120px;
+  height: 40px;
+  border-radius: 17%/50%;
 }
 
 .standard-button_secondary{
+  background-color: inherit;
+  border: 2px solid #303030;
+}
+
+.standard-button_secondary:hover {
+  border-color: #e24242;
+  color: #e24242;
+  transtion: border-color .4s, font-color .4s;
+  background-color: inherit;
 }
 .standard-button_secondary--small{
+  width: 120px;
+  height: 40px;
+  border-radius: 17%/50%;
 }
 
 .standard-button_subtle{
+  border: 2px solid #D6D8E7;
 }
+
+.standard-button_subtle:hover{
+  background-color: inherit;
+  color: #e24242;
+  transtion: font-color .4s;
+}
+
+
 .standard-button_subtle--small{
+  width: 120px;
+  height: 40px;
+  border-radius: 17%/50%;
 }
 
 
