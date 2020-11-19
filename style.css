@@ -7,6 +7,9 @@ Author URI: https://tomusborne.com & https://staydepartment.com
 Description: generatepress child theme for Stay Department
 Version: 1.1
 */
+* {
+  font-size: 16px;
+}
 
 .main-navigation .main-nav ul li[class*="current-menu-"] > a{
   color: inherit;
@@ -36,4 +39,63 @@ Version: 1.1
 
 .genie-header {
 	border-bottom: 6px solid #f2ea1b;
+}
+
+/* ---- STANDARD BUTTONS ---- */
+
+.standard-button{
+}
+
+.standard-button--disabled{
+    /* this can just change the opacity (?) */
+}
+
+.standard-button_primary{
+  background-color: #303030;
+  border-radius: 15%/50%;
+  color:#fff;
+  width: 200px;
+  height: 56px;
+}
+.standard-button_primary--small{
+}
+
+.standard-button_secondary{
+}
+.standard-button_secondary--small{
+}
+
+.standard-button_subtle{
+}
+.standard-button_subtle--small{
+}
+
+
+/* ---- ICON BUTTONS ---- */
+
+.icon-button{
+}
+.icon-button--disabled{
+    /* this can just change the opacity (?) */
+}
+
+.icon-button_primary{
+}
+.icon-button_secondary{
+}
+
+
+/* ---- TUTORIAL BUTTONS ---- */
+
+.tutorial-button{
+}
+
+.tutorial-button_stream{
+}
+.tutorial-button_stream:hover{
+}
+
+.tutorial-button_vote{
+}
+.tutorial-button_vote:hover{
 }
