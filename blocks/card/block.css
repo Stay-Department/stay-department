@@ -10,14 +10,27 @@
   	display: inline-block;
   	vertical-align:top;
 	position: relative;
+	transition: background .5s;
 }
+
+
 
 .yellow  {
 	box-shadow: 0px 6px #F2EA1B;
 }
 
+.card.yellow:hover {
+	background: #F2EA1B;
+	transition: background .5s;
+}
+
 .blue {
 		box-shadow: 0px 6px #383D8E;
+}
+
+.card.blue:hover {
+	background: #383D8E;
+	transition: background .5s;
 }
 
 .card p {

@@ -8,14 +8,7 @@ Description: generatepress child theme for Stay Department
 Version: 1.1
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-
-* {
-  font-family: 'Open Sans';
-  font-size: 16px;
-  background-color: #fff;
-}
-
-button {
+/*button {
     display: inline-block;
     border: none;
     margin: 0;
@@ -39,7 +32,7 @@ button:focus {
 
 button:active {
     transform: scale(0.99);
-}
+}*/
 
 .main-navigation .main-nav ul li[class*="current-menu-"] > a{
   color: inherit;
@@ -71,7 +64,7 @@ button:active {
 	border-bottom: 6px solid #f2ea1b;
 }
 
-/* ---- STANDARD BUTTONS ---- */
+/* ---- STANDARD BUTTONS ----
 .standard-button{
   width: 200px;
   height: 56px;
@@ -88,7 +81,7 @@ button:active {
 .standard-button--disabled{
    pointer-events: none;
    opacity: .5;
-    /* this can just change the opacity (?) */
+    /* this can just change the opacity (?)
 }
 
 .standard-button_primary{
@@ -142,12 +135,12 @@ button:active {
 }
 
 
-/* ---- ICON BUTTONS ---- */
+---- ICON BUTTONS ----
 
 .icon-button{
 }
 .icon-button--disabled{
-    /* this can just change the opacity (?) */
+    /* this can just change the opacity (?)
 }
 
 .icon-button_primary{
@@ -156,7 +149,7 @@ button:active {
 }
 
 
-/* ---- TUTORIAL BUTTONS ---- */
+/* ---- TUTORIAL BUTTONS ----
 
 .tutorial-button{
 }
@@ -169,4 +162,10 @@ button:active {
 .tutorial-button_vote{
 }
 .tutorial-button_vote:hover{
+}
+*/
+.section--grey {
+	top: -200px;
+position: relative;
+background: #2F3436;
 }
