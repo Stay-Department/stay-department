@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /*@font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -21,19 +22,32 @@
   background-color: #fff;
 }*/
 
+=======
+>>>>>>> Stashed changes
 .staff {
-  postion: relative;
+  position: relative;
   line-height: 10px;
+  display: block;
+  margin: 0px 35px;
+  margin-bottom: 70px;
+  vertical-align: top;
 }
 
 .staff-name {
   font-family: 'Russo One';
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .staff-twitter {
-  font-weight: bold;
+  font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.staff-twitter a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .staff-img {
@@ -43,8 +57,8 @@
   height: 125px;
   border-radius: 50%;
   vertical-align: top;
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
+margin-top: 20px
 }
 
 .staff-header {
@@ -61,10 +75,12 @@
   font-size: 13px;
   text-align: center;
   padding: 5px 10px;
+  margin-bottom: 15px;
 }
 
 .staff-languages{
-  font-size: 14px;
+  font-size: 12px;
+  margin: 7px 0px;
 }
 
 .staff-rating {
@@ -73,7 +89,7 @@
 
 .staff-rating svg {
   display: inline-block;
-  margin: 2px;
+  margin: 2px 0px;
   top: 4px;
   position: relative
 }
@@ -81,4 +97,5 @@
 .staff-rating p{
   display: inline-block;
   font-size:14px;
+  margin: 7px 0px;
 }

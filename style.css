@@ -7,6 +7,7 @@ Author URI: https://tomusborne.com & https://staydepartment.com
 Description: generatepress child theme for Stay Department
 Version: 1.1
 */
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 /*button {
     display: inline-block;
@@ -33,11 +34,49 @@ button:focus {
 button:active {
     transform: scale(0.99);
 }*/
+=======
+:root {
+	--primary-red: #E24242;
+	--primary-red-dark: #B42B2B;
+	--primary-red-light: #FDACAC;
+	--secondary-orange: #EF7438;
+	--secondary-orange-dark: #C64F15;
+	--secondary-orange-light: #FFBA98;
+	--secondary-yellow:#F2EA1B;
+	--secondary-yellow-dark:#C4BE2F;
+	--secondary-yellow-light:#FFFDCE;
+	--secondary-blue:#383D8E;
+	--secondary-blue-dark: #1D215E;
+	--secondary-blue-light:#9B9DC5;
+	--grayscale-background:#FCFCFC;
+	--grayscale-inpput-background:#EFF0F7;
+	--grayscale-title:#303030;
+	--grayscale-label:#787878;
+	--grayscale-body:#2f3436;
+	--grayscale-placeholder:#979797;
+	--grayscale-white:#fff;
+	--action-error:#e24242;
+	--action-warning:#ffbb12;
+	--action-success:#00ba88;
+}
+
+body::-webkit-scrollbar{
+	width: 0.25em;
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--grayscale-input);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--primary-red-dark);
+}
+>>>>>>> Stashed changes
 
 .main-navigation .main-nav ul li[class*="current-menu-"] > a{
   color: inherit;
   font-weight: bold;
-  border-bottom: 3px solid #B42B2B;
+  border-bottom: 3px solid var(--primary-red-dark);
 }
 
 .nav-float-right #site-navigation {
@@ -52,19 +91,23 @@ button:active {
 	padding:0px;
 }
 
-.welcome_header {
-	border-bottom: 2px solid #979797;
-}
-
-.tutorial_header {
-	border-bottom: 1px solid #979797;
-}
-
 .genie-header {
 	border-bottom: 6px solid #f2ea1b;
 }
 
+.translation-header {
+	border-bottom: 6px solid #EF7438;
+}
+
+.voting-header {
+	border-bottom: 6px solid #383D8E;
+}
+<<<<<<< Updated upstream
+
 /* ---- STANDARD BUTTONS ----
+=======
+/* ---- STANDARD BUTTONS ---- */
+>>>>>>> Stashed changes
 .standard-button{
   width: 200px;
   height: 56px;
@@ -108,7 +151,7 @@ button:active {
 .standard-button_secondary:hover {
   border-color: #e24242;
   color: #e24242;
-  transtion: border-color .4s, font-color .4s;
+  transition: border-color .4s, font-color .4s;
   background-color: inherit;
 }
 .standard-button_secondary--small{
@@ -124,7 +167,7 @@ button:active {
 .standard-button_subtle:hover{
   background-color: inherit;
   color: #e24242;
-  transtion: font-color .4s;
+  transition: font-color .4s;
 }
 
 
@@ -149,23 +192,82 @@ button:active {
 }
 
 
+<<<<<<< Updated upstream
 /* ---- TUTORIAL BUTTONS ----
+=======
+/* Mobile*/
+.section--grey {
+	top: -270px;
+	position: relative;
+	background: #2F3436;
+}
+>>>>>>> Stashed changes
 
-.tutorial-button{
+@media (max-width: 600px) {
+	#mobile-header {
+		background-color:#eff0f6; 
+	}
 }
 
-.tutorial-button_stream{
-}
-.tutorial-button_stream:hover{
+@media (min-width: 600px) {
+	.welcome_header {
+		border-bottom: 2px solid #979797;
+	}
+
+	.tutorial_header {
+		border-bottom: 1px solid #979797;
+	}
+	
+	.dropdown-menu-toggle {
+		display:none!important;
+	}
+
+	.main-navigation .main-nav ul li.menu-item-has-children > a {
+		padding-right: 20px!important;
+	}
 }
 
-.tutorial-button_vote{
+
+/* Custom Tabs*/
+.wp-block-ub-tabbed-content-tab-title-wrap {
+  border-radius: 40px !important;
+  border: 2px solid #303030!important;
+  width: 9em;
+  height: 2.5em;
+  padding: inherit;
 }
-.tutorial-button_vote:hover{
+
+.wp-block-ub-tabbed-content-tab-title {
+	margin: auto;
 }
+
+.wp-block-ub-tabbed-content-tabs-content {
+	border:none;
+	padding: 0px;
+	margin: 60px 0px;
+	box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.04), 0px 4px 8px 0px rgba(0,0,0,0.08);
+	border-radius: 20px;
+
+}
+
+/* Post Category Tag Blocks*/
+.ugb-blog-posts.ugb-blog-posts--v2 .ugb-blog-posts__category{
+	border: 0px solid #303030;
+	width: max-content;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: 600;
+	text-decoration: none;
+	position: absolute;
+	right: 5em;
+}
+<<<<<<< Updated upstream
 */
 .section--grey {
 	top: -200px;
 position: relative;
 background: #2F3436;
 }
+=======
+
+>>>>>>> Stashed changes

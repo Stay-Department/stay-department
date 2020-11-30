@@ -6,9 +6,9 @@ function enqueue_parent_styles() {
 }
 
 function displayTodaysDate( $atts ) {
-  return date(get_option('date_format'));
+  return date_i18n(get_option('date_format'));
 }
-
+define( 'WP_DEBUG', true );
 add_shortcode('datetoday', 'displayTodaysDate');
 
 /**
@@ -137,4 +137,12 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
     }
 
     add_filter( 'page_row_actions', 'rd_duplicate_post_link', 10, 2 );
+
+	function debug_to_console( $data ) {
+	if ( is_array( $data ) )
+	 $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
+	 else
+	 $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
+	echo $output;
+	}
 ?>

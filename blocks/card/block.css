@@ -3,7 +3,7 @@
 	margin-right: 1em;
 	margin-bottom: 2em;
  	border-radius: 1em;
-  	width: 25em;
+  	width: 22em;
   	height: 4em;
   	background: #EFF0F6;
   	color:#2F3436;
@@ -30,10 +30,18 @@
 
 .card.blue:hover {
 	background: #383D8E;
+<<<<<<< Updated upstream
 	transition: background .5s;
 }
 
 .card p {
+=======
+	color: #fff;
+	transition: background .5s;
+}
+
+.card .paragraph {
+>>>>>>> Stashed changes
 	margin-left: .8em;
 	margin-top: .3em;
 	line-height: 1.5em;
@@ -49,8 +57,16 @@
 		background: none!important;
 		margin-left: 1em;
 	}
+	
+	.card.yellow {
+		border-color: #F2ea1b;
+	}
+	
+	.card.blue {
+		border-color: #383D8E;
+	}
 
-	.card p {
+	.card .paragraph {
 		font-size: 12px;
 		font-weight: bold;
 		margin: 0em 0em 0em 1em;
